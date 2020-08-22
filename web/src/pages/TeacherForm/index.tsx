@@ -18,6 +18,16 @@ function TeacherForm() {
             <label htmlFor="name">Nome completo</label>
             <input type="text" id="name" />
           </div>
+
+          <div className="input-block">
+            <label htmlFor="Avatar">Avatar</label>
+            <input type="text" id="avatar" />
+          </div>
+
+          <div className="input-block">
+            <label htmlFor="whatsapp">whatsapp</label>
+            <input type="text" id="whatsapp" />
+          </div>
         </fieldset>
       </main>
     </div>
