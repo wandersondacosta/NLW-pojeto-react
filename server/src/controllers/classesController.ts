@@ -9,6 +9,10 @@ interface ScheduleItem {
 }
 
 export default class classesController {
+  async list(request: Request, response: Response) {
+    const classes = await db("classes").where("classes.id", "=", 1);
+    return response.status(200).json(classes);
+  }
   async index(request: Request, response: Response) {
     const filters = request.query;
 

@@ -7,6 +7,7 @@ const classesControllers = new classesController();
 const connectionsController = new ConnectionController();
 
 routes.get("/classes", classesControllers.index);
+routes.get("/classes/list", classesControllers.list);
 routes.post("/classes", classesControllers.create);
 
 routes.get("/connections", connectionsController.index);
